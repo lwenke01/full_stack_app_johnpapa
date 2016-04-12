@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>App</title>
+</head>
+<body data-ng-app="ArcadeApp">
+  <h1>Arcades</h1>
+  <main data-ng-init="arcadectrl.getArcades()" data-ng-controller="ArcadeController as arcadectrl">
+
+  <h2>{{dance}}</h2>
+  <form data-ng-submit="arcadectrl.createArcade(newArcade)">
+    Name<input type="text" data-ng-model="newArcade.name">
+    Address<input type="text" data-ng-model="newArcade.address">
+    Hours<input type="text" data-ng-model="newArcade.hours">
+    <button type="submit">Add New Arcade</button>
+  </form>
+----------------------------------------------------------------------------
+    <div data-ng-repeat="arcade in arcadectrl.arcades">
+      <h2><em> Name:</em> {{arcade.name}} </h2>
+      <h2><em>Address:</em>  {{arcade.address}}</h2>
+      <h2><em>Hours:</em> {{arcade.hours}}</h2>
+    <button data-ng-click="arcadectrl.removeArcade(arcade)">Delete</button>
+
+
+    <form data-ng-submit="arcadectrl.updateArcade(arcEdit)">
+      Name<input type="text" data-ng-model="arcEdit.name">
+      Address<input type="text" data-ng-model="arcEdit.address">
+      Hours<input type="text" data-ng-model="arcEdit.hours">
+      <button type="submit">Edit Arcade</button>
+      <button type="submit" data-ng-click="arcadectrl.cancelUpdate(arcEdit, arcade)">Cancel Edit</button>
+
+    </form>
+
+  </div>
+    _________________________________________________________________________
+
+
+
+
+  </main>
+<script src='./bower_components/angular/angular.js' type="text/javascript"></script>
+  <script src='./js/app.js' type="text/javascript"></script>
+
+</body>
+</html>

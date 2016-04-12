@@ -1,0 +1,33 @@
+{
+  "name": "john_papa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "body-parser": "^1.15.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^2.2.0",
+    "gulp-webpack": "^1.5.0",
+    "mongoose": "^4.4.12",
+    "webpack-stream": "^3.1.0",
+    "angular": "^1.5.3",
+    "webpack": "^1.12.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwenke01/full_stack_app_johnpapa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lwenke01/full_stack_app_johnpapa/issues"
+  },
+  "homepage": "https://github.com/lwenke01/full_stack_app_johnpapa#readme"
+}
